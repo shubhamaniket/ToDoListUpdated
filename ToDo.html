@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <style>
+        #container{
+            width:360px;
+            border: 2px solid gray;
+            margin: 0px auto;
+            margin-top: 100px;
+            background: #f1f1f1;
+            box-shadow:  0 0 3px rgba(0,0,0,0.1);
+        }
+        h1{
+            color:beige;
+            background-color: cornflowerblue;
+            font-weight: normal;
+            padding:10px;
+            margin:0;
+            font-size:24px;
+        }
+        ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+        li{
+            font-size:20px;
+            height:40px;
+            line-height: 40px;
+            font-family: 'Source Sans Pro', sans-serif;
+            color:#666;
+        }
+        li:nth-child(2n){
+            background-color: wheat;
+        }
+        input{
+            font-size:18px;
+            width:100%;
+            color:#2980B9;
+            background-color: #f7f7f7;
+            padding:13px 13px 13px 20px;
+            box-sizing: border-box;
+            border: 3px solid rgba(0,0,0,0)
+        }
+        input:focus{
+            background-color: #fff;
+            border: 3px solid #2980B9;
+            outline: none;
+        }
+        body{
+            background: #c2e59c;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c);
+            background: linear-gradient(to left, #64b3f4, #c2e59c); 
+        }
+        #icon{
+            float:right;
+        }
+        span{
+            width:0px;
+            height:40px;
+            margin-right: 20px;
+            background-color: rgb(120, 198, 235);
+            display: inline-block;
+            text-align:center;
+            transition: 0.2s linear;
+            opacity: 0;
+        }
+        li:hover span{
+            width:40px;
+            opacity:1.0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>To-Do List<i class="far fa-plus-square" id="icon"></i></h1>
+        <input type="text" id="inp" placeholder="Add New To-Do"> 
+        <ul>
+                <li><span><i class="far fa-trash-alt"></i></span> This is a To-Do</li>
+                <li><span><i class="far fa-trash-alt"></i></span> This is a To-Do</li>
+                <li><span><i class="far fa-trash-alt"></i></span> This is a To-Do</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="ToDo.js"></script>
+</body>
+</html>
